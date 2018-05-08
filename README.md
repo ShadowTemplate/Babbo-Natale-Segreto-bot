@@ -43,8 +43,8 @@ member has authorized your bot to send him messages.
 Clone the repository and install the required Python dependencies:
 
 ```
-$ git clone https://github.com/ShadowTemplate/Babbo-Natale-Segreto-bot.git
-$ cd Babbo-Natale-Segreto-bot
+$ git clone https://github.com/ShadowTemplate/babbo-natale-segreto-bot.git
+$ cd babbo-natale-segreto-bot
 $ pip install --user -r requirements.txt
 ```
 
