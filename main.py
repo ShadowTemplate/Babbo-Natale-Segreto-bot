@@ -28,13 +28,17 @@ def main():
         if are_valid_people(people):
             break
 
-    draw = [(d[0][0], d[0][1], d[1][0], d[1][1]) for d in zip(categories, people)]
+    draw = [(d[0][0], d[0][1], d[1][0], d[1][1])
+            for d in zip(categories, people)]
 
     bns_bot = telegram.Bot(token=secrets.bns_bot_token)
     for d in draw:
-        message = "DIN-DON! Si è appena concluso il sorteggio!\nDovrai fare un regalo a " + secrets.users.get(d[3]) + \
-                  ".\nLe categorie estratte per il tuo regalo sono: '" + d[0] + "' + '" + d[1] + \
-                  "'.\nSi preannuncia un Natale spumeggiante!\n\nAl prossimo anno, yohoho-ooooooh!"
+        message = "DIN-DON! Si è appena concluso il sorteggio!\n" \
+                  "Dovrai fare un regalo a " + secrets.users.get(d[3]) + \
+                  ".\nLe categorie estratte per il tuo regalo sono: '" + d[0] \
+                  + "' + '" + d[1] + \
+                  "'.\nSi preannuncia un Natale spumeggiante!\n\n" \
+                  "Al prossimo anno, yohoho-ooooooh!"
         bns_bot.sendMessage(chat_id=d[2], text=message)
 
 
