@@ -14,7 +14,7 @@ each person. The bot is designed to be executed offline.
 
 **Development year(s)**: `2016+`
 
-**Authors**: [ShadowTemplate](https://github.com/ShadowTemplate)
+**Author(s)**: Andrea, [ShadowTemplate](https://github.com/ShadowTemplate)
 
 ---
 ## Getting Started
